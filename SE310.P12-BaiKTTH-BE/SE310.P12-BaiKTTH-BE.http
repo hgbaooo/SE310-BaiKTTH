@@ -1,0 +1,6 @@
+@SE310.P12_BaiKTTH_BE_HostAddress = http://localhost:5002
+
+GET {{SE310.P12_BaiKTTH_BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
