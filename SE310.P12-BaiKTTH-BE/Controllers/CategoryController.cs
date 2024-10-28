@@ -20,10 +20,10 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
         }
 
         [HttpGet("getAllCategories")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<CategoryDto>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<GetCategoryDto>))]
         public IActionResult GetCategories()
         {
-            var categories = _mapper.Map<List<CategoryDto>>(_categoryRepository.GetCategories());
+            var categories = _mapper.Map<List<GetCategoryDto>>(_categoryRepository.GetCategories());
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -32,14 +32,14 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
         }
 
         [HttpGet("getCategoryById/{id}")]
-        [ProducesResponseType(200, Type = typeof(CategoryDto))]
+        [ProducesResponseType(200, Type = typeof(GetCategoryDto))]
         [ProducesResponseType(400)]
         public IActionResult GetCategoryById(int id)
         {
             if (!_categoryRepository.CategoryExists(id))
                 return NotFound();
 
-            var category = _mapper.Map<CategoryDto>(_categoryRepository.GetCategoryById(id));
+            var category = _mapper.Map<GetCategoryDto>(_categoryRepository.GetCategoryById(id));
 
             if (!ModelState.IsValid)
                 return BadRequest();

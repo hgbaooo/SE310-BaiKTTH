@@ -13,4 +13,5 @@ public interface IProductRepository
 
     bool ProductExist(int id);
     bool Save();
+    bool CategoryExist(int categoryId);
 }

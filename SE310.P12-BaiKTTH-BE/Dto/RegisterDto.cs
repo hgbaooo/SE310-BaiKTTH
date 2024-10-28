@@ -1,11 +1,10 @@
-﻿namespace SE310.P12_BaiKTTH_BE.Models;
+﻿namespace SE310.P12_BaiKTTH_BE.Dto;
 
-public class User
+public class RegisterDto
 {
-    public int Id { get; set; }
     public string UserName { get; set; }
-    public string PassWord { get; set; }
     public string Email { get; set; }
     public string PhoneNumber { get; set; }
+    public string PassWord { get; set; }
     public string Role { get; set; }
 }

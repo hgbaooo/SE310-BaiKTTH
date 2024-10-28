@@ -24,7 +24,7 @@ public class ProductRepository: IProductRepository
 
     public ICollection<Product> GetProductsByCategoryId(int categoryId)
     {
-        return _context.ProductCategories.Where(e => e.CategoryId == categoryId).Select(c => c.Product).ToList();
+        return _context.Products.Where(p => p.CategoryId == categoryId).ToList();
     }
 
     public bool CreateProduct(Product product)
@@ -66,4 +66,9 @@ public class ProductRepository: IProductRepository
     {
         return _context.Products.Any(c => c.Id == id);
     }
+    public bool CategoryExist(int categoryId)
+    {
+        return _context.Categories.Any(c => c.Id == categoryId);
+    }
+
 }

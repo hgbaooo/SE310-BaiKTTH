@@ -20,10 +20,10 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
         }
         
         [HttpGet("getAllProducts")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Product>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<GetProductDto>))]
         public IActionResult GetCategories()
         {
-            var products = _mapper.Map<List<ProductDto>>(_productRepository.GetProducts());
+            var products = _mapper.Map<List<GetProductDto>>(_productRepository.GetProducts());
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -32,11 +32,11 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
         }
         
         [HttpGet("getProductById/{Id}")]
-        [ProducesResponseType(200, Type = typeof(Product))]
+        [ProducesResponseType(200, Type = typeof(GetProductDto))]
         [ProducesResponseType(400)]
         public IActionResult GetProductById(int Id)
         {
-            var product = _mapper.Map<List<ProductDto>>(
+            var product = _mapper.Map<List<GetProductDto>>(
                 _productRepository.GetProductById(Id));
 
             if (!ModelState.IsValid)
@@ -46,10 +46,17 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
         }
         
         [HttpGet("getProductByCategoryId/{categoryId}")]
-        [ProducesResponseType(200, Type = typeof(ICollection<Product>))]
+        [ProducesResponseType(200, Type = typeof(ICollection<GetProductDto>))]
         [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
         public IActionResult GetProductsByCategoryId(int categoryId)
         {
+            // Check if the category exists
+            if (!_productRepository.CategoryExist(categoryId))
+            {
+                return NotFound($"Category with ID {categoryId} does not exist.");
+            }
+
             var products = _mapper.Map<List<ProductDto>>(
                 _productRepository.GetProductsByCategoryId(categoryId));
 
@@ -58,6 +65,7 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
 
             return Ok(products);
         }
+
         
         [HttpPost("createProduct")]
         [ProducesResponseType(204)]
@@ -67,6 +75,22 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
             if (productCreate == null)
                 return BadRequest(ModelState);
 
+            // Ensure that CategoryId is provided
+            if (productCreate.CategoryId == 0)
+            {
+                ModelState.AddModelError("", "CategoryId is required");
+                return BadRequest(ModelState);
+            }
+
+            // Validate if the provided CategoryId exists
+            var categoryExists = _productRepository.CategoryExist(productCreate.CategoryId);
+            if (!categoryExists)
+            {
+                ModelState.AddModelError("", "Category does not exist");
+                return BadRequest(ModelState);
+            }
+
+            // Check if product already exists
             var product = _productRepository.GetProducts()
                 .Where(c => c.Name.Trim().ToUpper() == productCreate.Name.TrimEnd().ToUpper())
                 .FirstOrDefault();
@@ -84,12 +108,13 @@ namespace SE310.P12_BaiKTTH_BE.Controllers
 
             if(!_productRepository.CreateProduct(productMap))
             {
-                ModelState.AddModelError("", "Something went wrong while savin");
+                ModelState.AddModelError("", "Something went wrong while saving");
                 return StatusCode(500, ModelState);
             }
 
             return Ok("Successfully created");
         }
+
         
         [HttpPatch("updateProduct/{productId}")]
         [ProducesResponseType(400)]

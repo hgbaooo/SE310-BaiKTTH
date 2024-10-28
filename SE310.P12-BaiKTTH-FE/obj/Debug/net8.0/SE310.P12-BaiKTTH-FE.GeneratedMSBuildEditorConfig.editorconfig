@@ -9,39 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SE310.P12_BaiKTTH_FE
 build_property.RootNamespace = SE310.P12_BaiKTTH_FE
-build_property.ProjectDir = D:\Documents\UniversityDocuments\HocKi5\SE310-Dotnet\SE310.P12-BaiKTTH\SE310.P12-BaiKTTH-FE\
+build_property.ProjectDir = D:\Documents\UniversityDocuments\HocKi5\SE310-Dotnet\SE310-BaiKTTH\SE310.P12-BaiKTTH-FE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Documents\UniversityDocuments\HocKi5\SE310-Dotnet\SE310.P12-BaiKTTH\SE310.P12-BaiKTTH-FE
+build_property.MSBuildProjectDirectory = D:\Documents\UniversityDocuments\HocKi5\SE310-Dotnet\SE310-BaiKTTH\SE310.P12-BaiKTTH-FE
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Index.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Privacy.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/Error.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/_ViewImports.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/_ViewStart.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310.P12-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_Layout.cshtml]
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e7srgsm915

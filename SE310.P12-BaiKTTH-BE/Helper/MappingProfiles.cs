@@ -10,8 +10,12 @@ public class MappingProfiles: Profile
     {
         CreateMap<Product, ProductDto>();
         CreateMap<ProductDto, Product>();
+        CreateMap<Product, GetProductDto>();
+        CreateMap<GetProductDto, Product>();
         CreateMap<Category, CategoryDto>();
         CreateMap<CategoryDto, Category>();
+        CreateMap<Category, GetCategoryDto>();
+        CreateMap<GetCategoryDto, Category>();
         CreateMap<User, UserDto>();
         CreateMap<UserDto, User>();
     }

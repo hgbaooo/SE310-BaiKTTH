@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310.P12-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj": {}
+    "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310.P12-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj": {
+    "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310.P12-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj",
+        "projectUniqueName": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj",
         "projectName": "SE310.P12-BaiKTTH-BE",
-        "projectPath": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310.P12-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj",
+        "projectPath": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310-BaiKTTH\\SE310.P12-BaiKTTH-BE\\SE310.P12-BaiKTTH-BE.csproj",
         "packagesPath": "C:\\Users\\baoba\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310.P12-BaiKTTH\\SE310.P12-BaiKTTH-BE\\obj\\",
+        "outputPath": "D:\\Documents\\UniversityDocuments\\HocKi5\\SE310-Dotnet\\SE310-BaiKTTH\\SE310.P12-BaiKTTH-BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -11,7 +11,7 @@ using SE310.P12_BaiKTTH_BE.Data;
 namespace SE310.P12_BaiKTTH_BE.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241028074740_Initial")]
+    [Migration("20241028144948_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -49,6 +49,9 @@ namespace SE310.P12_BaiKTTH_BE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -69,22 +72,9 @@ namespace SE310.P12_BaiKTTH_BE.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.ProductCategory", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductId", "CategoryId");
-
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("ProductCategories");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.User", b =>
@@ -107,6 +97,10 @@ namespace SE310.P12_BaiKTTH_BE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -116,33 +110,20 @@ namespace SE310.P12_BaiKTTH_BE.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.ProductCategory", b =>
+            modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.Product", b =>
                 {
                     b.HasOne("SE310.P12_BaiKTTH_BE.Models.Category", "Category")
-                        .WithMany("ProductCategories")
+                        .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SE310.P12_BaiKTTH_BE.Models.Product", "Product")
-                        .WithMany("ProductCategories")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Category");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.Category", b =>
                 {
-                    b.Navigation("ProductCategories");
-                });
-
-            modelBuilder.Entity("SE310.P12_BaiKTTH_BE.Models.Product", b =>
-                {
-                    b.Navigation("ProductCategories");
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
