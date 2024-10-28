@@ -1,28 +1,26 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using SE310.P12_BaiKTTH_FE.Models;
+using SE310_BKTTH.Data;
+using SE310_BKTTH.Models;
 
-namespace SE310.P12_BaiKTTH_FE.Controllers;
+namespace SE310_BKTTH.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly HttpClient _httpClient;
+    
+    public HomeController(HttpClient httpClient)
     {
-        _logger = logger;
+        _httpClient = httpClient;
+        _httpClient.BaseAddress = new Uri("http://localhost:5017/api/v1/");
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var products = await _httpClient.GetFromJsonAsync<List<ProductModel>>("Product");
+        return View(products);
     }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

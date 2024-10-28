@@ -1,4 +1,4 @@
-namespace SE310.P12_BaiKTTH_FE.Models;
+namespace SE310_BKTTH.Models;
 
 public class ErrorViewModel
 {
