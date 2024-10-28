@@ -18,16 +18,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Documents\UniversityDocuments\HocKi5\SE310-Dotnet\SE310-BaiKTTH\SE310.P12-BaiKTTH-FE
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Admin/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Authentication/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Authentication/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Product/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_LayoutAuth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBdXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_NavBarAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXJBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_NavbarUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_ProductItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -42,6 +94,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-e7srgsm915
+[D:/Documents/UniversityDocuments/HocKi5/SE310-Dotnet/SE310-BaiKTTH/SE310.P12-BaiKTTH-FE/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-060sro8rbd

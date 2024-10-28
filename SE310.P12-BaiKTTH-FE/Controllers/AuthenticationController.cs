@@ -29,7 +29,7 @@ public class AuthenticationController : Controller
         };
 
         // Call the authentication API
-        var response = await _httpClient.PostAsJsonAsync("http://localhost:5017/api/v1/Auth/login", loginData);
+        var response = await _httpClient.PostAsJsonAsync("http://localhost:5002/api/v1/Auth/login", loginData);
 
         if (response.IsSuccessStatusCode)
         {
@@ -71,7 +71,7 @@ public class AuthenticationController : Controller
         };
 
         // Send registration request to the API
-        var response = await _httpClient.PostAsJsonAsync("http://localhost:5017/api/v1/Auth/register", registerData);
+        var response = await _httpClient.PostAsJsonAsync("http://localhost:5002/api/v1/Auth/register", registerData);
 
         if (response.IsSuccessStatusCode)
         {
